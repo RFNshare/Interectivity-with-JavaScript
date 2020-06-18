@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="text/javascript" src="js/myscripts.js"></script>
 </head>
-<body>
+<body onload="message('Mihrima')" onresize="message('RESIZE')">
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -37,7 +37,19 @@
     </div>
     <div class="row">
         <div class="col text-center">
-            <button class="btn btn-primary btn-sm" onclick="count()">Count it</button>
+            <button class="btn btn-primary btn-sm" onclick="count()">Count P List</button>
+        </div>
+    </div>
+    <div class="row cname">
+        <div class="col text-center">
+            <button class="btn btn-primary btn-sm" onclick="message('Mahnoor')">Click and know her sister name</button>
+            <p id = "output"></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h1 id="date">Do you want to know today date?</h1>
+            <button class="btn btn-primary btn-sm" onclick="dsiplayDate()">Check Date</button>
         </div>
     </div>
 
