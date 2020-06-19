@@ -1,6 +1,25 @@
 h1 {
-	text-align: center;
+    text-align: center;
 }
+
 .cname {
-	margin-top: 10px;
+    margin-top: 10px;
+}
+
+.modp {
+    margin-top: 10px;
+    padding: 30px;
+}
+
+p.outset {
+    border-style: outset;
+    padding: 50px;
+    text-align: center;
+    background-color: #0b2e13;
+    color: #9fcdff;
+    font-size: 50px;
+}
+.pic {
+    height: 300px;
+    width: 300px;
 }

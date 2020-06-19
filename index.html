@@ -15,45 +15,89 @@
 </head>
 <body onload="message('Mihrima')" onresize="message('RESIZE')">
 <div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1 id="test">Hey, How are you? You want to know my name? Click try it</h1>
+    <div id="full_hide">
+        <div class="row">
+            <div class="col-12">
+                <h1 id="test">Hey, How are you? You want to know my name? Click try it</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button class="btn btn-primary btn-sm" onclick="nm()">Try it</button>
+                <button class="btn btn-primary btn-sm" onclick="para(pr)">Para it</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>asd</p>
+                <p>zxc</p>
+                <p>qwe</p>
+                <p>jkl</p>
+                <p>bnm</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button class="btn btn-primary btn-sm" onclick="count()">Count P List</button>
+            </div>
+        </div>
+        <div class="row cname">
+            <div class="col text-center">
+                <button class="btn btn-primary btn-sm" onclick="message('Mahnoor')">Click and know her sister name
+                </button>
+                <p id="output"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h1 id="date">Do you want to know today date?</h1>
+                <button class="btn btn-primary btn-sm" onclick="dsiplayDate()">Check Date</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h2>Modify The DOM</h2>
+                <button onclick="firstButton();">First Button</button>
+                <button onclick="secondButton();">Second Button</button>
+                <br>
+                <button onclick="closeButton();">Close Button</button>
+                <button onclick="openButton();">Open Button</button>
+                <br>
+                <div class="modp">
+                    <p>This code should't change</p>
+                    <p id="p_change">This will Change</p>
+                    <p id="show_hide">This should't change either</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
         <div class="col text-center">
-            <button class="btn btn-primary btn-sm" onclick="nm()">Try it</button>
-            <button class="btn btn-primary btn-sm" onclick="para(pr)">Para it</button>
+            <button onclick="fullButton();">Close Button</button>
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
-            <p>asd</p>
-            <p>zxc</p>
-            <p>qwe</p>
-            <p>jkl</p>
-            <p>bnm</p>
+        <div class="col-12 col-md">
+            <p id="qwe" class="outset">Hover on an image</p>
         </div>
     </div>
     <div class="row">
-        <div class="col text-center">
-            <button class="btn btn-primary btn-sm" onclick="count()">Count P List</button>
+        <div class="col-12 col-md-4">
+            <img class="img-fluid img-thumbnail pic" src="images/Raju.png" alt="Raju(Software Eng. at ThatQuick)"
+                 onmouseover="showInfo(this)"
+                 onmouseleave="document.getElementById('qwe').innerHTML='Hover on an image'">
+        </div>
+        <div class="col-12 col-md-4">
+            <img class="img-fluid img-thumbnail pic" src="images/Rubel.png" alt="Rubel(CTO at ThatQuick)"
+                 onmouseover="showInfo(this)"
+                 onmouseleave="document.getElementById('qwe').innerHTML='Hover on an image'">
+        </div>
+        <div class="col-12 col-md-4">
+            <img class="img-fluid img-thumbnail pic" src="images/Tama.png" alt="Tama(Business Manager at ThatQuick)"
+                 onmouseover="showInfo(this)"
+                 onmouseleave="document.getElementById('qwe').innerHTML='Hover on an image'">
         </div>
     </div>
-    <div class="row cname">
-        <div class="col text-center">
-            <button class="btn btn-primary btn-sm" onclick="message('Mahnoor')">Click and know her sister name</button>
-            <p id = "output"></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col text-center">
-            <h1 id="date">Do you want to know today date?</h1>
-            <button class="btn btn-primary btn-sm" onclick="dsiplayDate()">Check Date</button>
-        </div>
-    </div>
-
 </div>
-
 </body>
 </html>

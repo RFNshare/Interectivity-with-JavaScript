@@ -30,4 +30,26 @@ function  dsiplayDate() {
     document.getElementById("date").innerHTML = Date();
 
 }
+function firstButton() {
+    document.getElementById("p_change").innerHTML = "Clicked First Button";
+}
+function secondButton() {
+    document.getElementById("p_change").innerHTML = "Clicked Second Button";
+
+}
+function closeButton() {
+    var x = document.getElementById("show_hide");
+    x.style.display = "none";
+}
+function openButton() {
+    var x = document.getElementById("show_hide");
+    x.style.display = "block";
+}
+function fullButton() {
+    var x = document.getElementById("full_hide");
+    x.style.display = "block";
+}
+function showInfo(element) {
+    document.getElementById('qwe').innerHTML = element.alt;
+}
 
