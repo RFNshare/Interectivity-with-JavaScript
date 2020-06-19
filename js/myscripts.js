@@ -50,6 +50,11 @@ function fullButton() {
     x.style.display = "block";
 }
 function showInfo(element) {
-    document.getElementById('qwe').innerHTML = element.alt;
+    document.getElementById('image').style.backgroundImage = "url(" + element.src + ")";
+    document.getElementById('image').innerHTML = element.alt;
 }
+function hideInfo() {
+    document.getElementById('image').style.backgroundImage='none'
+    document.getElementById('image').innerHTML = "Hover on an image";
 
+}
