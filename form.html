@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+            integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row row-content">
+        <div class="col-12">
+            <h3>Send us your Feedback</h3>
+        </div>
+        <div class="col-12 col-md-9">
+            <form action=""
+            ">
+            <!--                <div class="form-group row">-->
+            <!--                    <label for="firstname" class="col-md-2 col-form-label" >First name</label>-->
+            <!--                    <div class="col-md-10">-->
+            <!--                        <input type="text" class="form-control" id="firstname" name="firstname"-->
+            <!--                               placeholder="First name" pattern="[0-9]{5}" required>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            <div class="form-group row">-->
+            <!--                <label for="number" class="col-md-2 col-form-label" >Number</label>-->
+            <!--                <div class="col-md-10">-->
+            <!--                    <input type="number" class="form-control" id="number" name="number"-->
+            <!--                           placeholder="Type your number" min="0" max="12" required>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <div class="form-group row">
+                <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                <div class="col-md-10">
+                    <input type="email" class="form-control" id="emailid" name="emailid"
+                           placeholder="Email" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="emailsid" class="col-md-2 col-form-label"> Retype Email</label>
+                <div class="col-md-10">
+                    <input type="email" class="form-control" id="emailsid" name="emailsid"
+                           placeholder=" Repet Email" onchange=" return checkEmail();" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="dateandtime" class="col-md-2 col-form-label">Date and Time</label>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <input type="date" class="form-control" id="areacode" name="areacode"
+                           placeholder="Date">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <input type="time" class="form-control" id="dateandtime" name="dateandtime"
+                           placeholder="Time">
+                </div>
+            </div>
+            <label for = "yesNick">Nickname?:</label>
+            <input id="yesNick" name="yesNick" type="checkbox" value="yes" onchange= "nicknameFunction()"/>	<br/>
+            <div id = "nick">
+                <label for = "nickname">Nickname:</label>
+                <input type = "text" name = "nickname" id = "nickname"><br/>
+            </div>
+            <div class="form-group row">
+                <div class="offset-md-2 col-md-10">
+                    <button type="submit" class="btn btn-primary" onclick="return checkEmail();">Send Feedback</button>
+                </div>
+            </div>
+            </form>
+        </div>
+        <div class="col-12 col-md">
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
