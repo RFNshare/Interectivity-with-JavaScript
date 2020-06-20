@@ -49,3 +49,7 @@ element.alt {
     color: green;
     font: 40px Impact;
 }
+#jstext {
+    text-align: center;
+    font-size: 90px;
+}
